@@ -1,0 +1,120 @@
+.header {
+  height: 75px;
+  background-color: #000000;
+}
+
+.buttons {
+  font-family: Calibri;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c2d6d6;
+  transition: 0.5s;
+}
+
+.home {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 22.5px;
+}
+
+.blog {
+  color: #808080;
+  font-size: 20px;
+  padding: 22.5px;
+}
+
+.support {
+  color: #808080;
+  font-size: 20px;
+  padding: 22.5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1125px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    padding-right: 90%;
+    padding-top: 10px;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Calibri;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: Calibri;
+  margin-top: 0px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.game1-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game2-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game3-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game4-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game5-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game6-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+body {
+  margin: 0;
+  background-color: #494f5c;
+}
+
+/*# sourceMappingURL=styles.css.map */

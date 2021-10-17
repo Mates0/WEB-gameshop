@@ -1,0 +1,8 @@
+@import "variables";
+@import "header";
+@import "mainpage";
+
+body {
+  margin: 0;
+  background-color: $background-color;
+}

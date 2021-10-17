@@ -1,0 +1,57 @@
+@import "variables";
+
+.header {
+  height: $header-height;
+  background-color: $header-color;
+}
+
+.buttons {
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: $header-hover-color;
+  transition: $header-transition;
+}
+
+.home {
+  color: $header-current-page-color;
+  font-size: $header-font-size;
+  padding: $header-padding;
+}
+
+.blog {
+  color: $header-buttons-color;
+  font-size: $header-font-size;
+  padding: $header-padding;
+}
+
+.support {
+  color: $header-buttons-color;
+  font-size: $header-font-size;
+  padding: $header-padding;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1125px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    padding-right: $header-padding-right-mobile;
+    padding-top: $header-padding-top-mobile;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+

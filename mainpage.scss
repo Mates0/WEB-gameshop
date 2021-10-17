@@ -1,0 +1,61 @@
+@import "variables";
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: $font-family;
+  color: $main-font-color;
+  font-size: $main-font-size-h1;
+}
+
+h2 {
+  color: $main-font-color;
+  font-family: $font-family;
+  margin-top: 0px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.game1-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game2-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game3-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game4-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game5-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game6-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
