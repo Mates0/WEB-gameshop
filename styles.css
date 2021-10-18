@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.home:hover, .loremipsum:hover, .support:hover {
   color: #c2d6d6;
   transition: 0.5s;
 }
@@ -24,7 +24,7 @@ a:hover {
   padding: 22.5px;
 }
 
-.blog {
+.loremipsum {
   color: #808080;
   font-size: 20px;
   padding: 22.5px;
@@ -36,16 +36,26 @@ a:hover {
   padding: 22.5px;
 }
 
-.hamburger {
+.hamburger, .nav-mobile {
   display: none;
 }
 
 @media screen and (max-width: 1125px) {
   .hamburger {
     display: block;
-    position: fixed;
-    padding-right: 90%;
     padding-top: 10px;
+  }
+
+  .hamburger-div {
+    width: 75px;
+  }
+
+  .hamburger-div:hover .nav-mobile {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 200px;
+    background-color: #000000;
   }
 
   .buttons {
@@ -53,8 +63,7 @@ a:hover {
   }
 }
 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: Calibri;
   color: #ffffff;
   font-size: 60px;
@@ -66,52 +75,100 @@ h2 {
   margin-top: 0px;
 }
 
-.first-row {
+.first-row, .second-row {
   display: flex;
   justify-content: space-evenly;
 }
 
-.second-row {
+.game1-text, .game2-text, .game3-text, .game4-text, .game5-text, .game6-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.game1:hover, .game2:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+.game3:hover, .game4:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+.game5:hover, .game6:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 1125px) {
+  .first-row, .second-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game1-text, .game2-text, .game3-text, .game4-text, .game5-text, .game6-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+h3 {
+  color: #ffffff;
+  font-family: Calibri;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: Calibri;
+}
+
+.inner-container {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.outer-container {
   display: flex;
   justify-content: space-evenly;
+  margin-left: 15%;
 }
 
-.game1-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.buy-button {
+  background-color: #9cb946;
+  height: 70px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Calibri;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 65px;
+  border-radius: 5px;
 }
 
-.game2-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.buy-button:hover {
+  background-color: #6e803c;
+  transition: 0.4s;
 }
 
-.game3-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
+@media screen and (max-width: 1125px) {
+  .outer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.game4-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  .inner-container {
+    margin-left: 25%;
+    margin-top: 100px;
+  }
 }
-
-.game5-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.game6-text {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 body {
   margin: 0;
   background-color: #494f5c;

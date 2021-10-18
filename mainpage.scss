@@ -1,8 +1,7 @@
 @import "variables";
 
 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: $font-family;
   color: $main-font-color;
   font-size: $main-font-size-h1;
@@ -14,48 +13,44 @@ h2 {
   margin-top: 0px;
 }
 
-.first-row {
+.first-row, .second-row {
   display: flex;
   justify-content: space-evenly;
 }
 
-.second-row {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.game1-text{
+.game1-text, .game2-text, .game3-text, .game4-text, .game5-text, .game6-text{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-.game2-text{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.game1:hover, .game2:hover {
+  transform: scale($main-scale);
+  transition: $main-transition;
 }
 
-.game3-text{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.game3:hover, .game4:hover {
+  transform: scale($main-scale);
+  transition: $main-transition;
 }
 
-.game4-text{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.game5:hover, .game6:hover {
+  transform: scale($main-scale);
+  transition: $main-transition;
 }
 
-.game5-text{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
+@media screen and (max-width: $media-querries-width) {
+  .first-row, .second-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
 
-.game6-text{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  }
+
+  .game1-text, .game2-text, .game3-text, .game4-text, .game5-text, .game6-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }

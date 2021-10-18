@@ -1,0 +1,56 @@
+@import "variables";
+
+h3 {
+  color: $main-font-color;
+  font-family: $font-family;
+  font-size: $main-font-size-h3;
+  margin-top: $detail-margin-top;
+  margin-bottom: $detail-margin-bottom;
+}
+
+h4 {
+  color: $main-font-color;
+  font-family: $font-family;
+}
+
+.inner-container {
+  width: $detail-width-inner-container;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: $detail-margin-left;
+}
+
+.buy-button {
+  background-color: $detail-buy-button-color;
+  height: $detail-buy-button-height;
+  text-align: center;
+  color: $detail-buy-button-text-color;
+  font-family: $font-family;
+  font-size: $detail-buy-button-font-size;
+  font-weight: $detail-buy-button-font-weight;
+  line-height: $detail-line-height;
+  border-radius: $detail-border-radius;
+}
+
+.buy-button:hover {
+  background-color: $detail-hover-color;
+  transition: $detail-transition;
+}
+
+@media screen and (max-width: $media-querries-width) {
+  .outer-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inner-container {
+    margin-left: $detail-inner-container-left;
+    margin-top: $detail-inner-container-top;
+  }
+}

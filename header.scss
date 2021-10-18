@@ -15,7 +15,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+
+.home:hover, .loremipsum:hover, .support:hover {
   color: $header-hover-color;
   transition: $header-transition;
 }
@@ -26,7 +27,7 @@ a:hover {
   padding: $header-padding;
 }
 
-.blog {
+.loremipsum {
   color: $header-buttons-color;
   font-size: $header-font-size;
   padding: $header-padding;
@@ -38,16 +39,26 @@ a:hover {
   padding: $header-padding;
 }
 
-.hamburger {
+.hamburger, .nav-mobile {
   display: none;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: $media-querries-width) {
   .hamburger {
     display: block;
-    position: fixed;
-    padding-right: $header-padding-right-mobile;
     padding-top: $header-padding-top-mobile;
+  }
+
+  .hamburger-div {
+    width: $header-hamburger-width;
+  }
+
+  .hamburger-div:hover .nav-mobile {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: $header-nav-mobile-width;
+    background-color: $header-color;
   }
 
   .buttons {
